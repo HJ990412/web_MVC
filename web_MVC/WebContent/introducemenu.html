@@ -1,0 +1,55 @@
+<HTML>
+
+<HEAD>
+ <TITLE>자기소개</TITLE>
+ <STYLE TYPE="text/css">
+ a { text-decoration:none }
+ BODY {margin-left: 170; margin-top: 50; margin-right: 200; background-color: #99ccff; color: #000000; font-family: 굴림체; text-align:center} 
+  
+                   .font3 { font-size: 18pt; font-family: "HY고딕체"; text-align: center; color: white}
+                   .font4 { font-size: 13pt; font-family: "HY고딕체"; text-align: center; color: white}
+                   .td1 { width: 900pt; height: 50pt; text-align: center }
+                   .td2 { width: 300pt; text-align: center }
+</STYLE>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+
+                  function MouseOver(cell,newcolor) { cell.bgColor = newcolor; }
+                  function MouseOut(cell,newcolor) { cell.bgColor = newcolor; }
+                  function MouseClick(cell,newcolor) { cell.bgColor = newcolor; }
+                  function theDate() {
+		    var now = new Date(); 
+		    var year = now.getFullYear();
+		    var month = now.getMonth() + 1;
+		    var date = now.getDate(), day; 
+		
+		    switch(now.getDay())
+		    {
+			  	case 0 : day = "일요일";             break;
+			  	case 1 : day = "월요일";             break;
+			  	case 2 : day = "화요일";             break;
+			  	case 3 : day = "수요일";             break;
+			  	case 4 : day = "목요일";             break;
+			  	case 5 : day = "금요일";             break;
+			  	case 6 : day = "토요일";             break;  
+		
+		    }
+		    document.write("<BR><B>" + year + "년 " + month + "월 " + date + "일 " + day + "</B>");
+		    document.write("<BR><B>" + now.getHours() + "시 " + now.getMinutes() + 
+		                                      "분 " + now.getSeconds() + "초</B>");
+		}
+</SCRIPT>
+</HEAD>
+ 
+<BODY>
+ <P><img src="시계.png" width=50pt><SCRIPT LANGUAGE=JAVASCRIPT>theDate();</SCRIPT></P>
+ <TABLE CLASS="td1">
+          <TR>
+                 <TD CLASS="td2" onMouseover="MouseOver(this, '#ff3366');" onMouseout="MouseOut(this,'#99ccff');" onClick="MouseClick(this,'#ffffcc');"><A HREF="introducebelow.html" TARGET="introducebelow"><P CLASS="font3"> HOME <P></A></TD>
+                 <TD CLASS="td2" onMouseover="MouseOver(this, '#ffcc33');" onMouseout="MouseOut(this,'#99ccff');" onClick="MouseClick(this,'#ffffcc');"><A HREF="about.html" TARGET="introducebelow"><P CLASS="font3"> ABOUT <P></TD>
+                 <TD CLASS="td2" onMouseover="MouseOver(this, '#33999');" onMouseout="MouseOut(this,'#99ccff');" onClick="MouseClick(this,'#ffffcc');"><A HREF="contact.html" TARGET="introducebelow"><P CLASS="font3"> CONTACT <P></A></TD>
+          </TR>
+</TABLE>
+</BODY>
+
+</HTML> 

@@ -1,0 +1,52 @@
+<HTML>
+
+<HEAD>
+<style type="text/css">
+ a { text-decoration:none } 
+ BODY {margin-left: 100; margin-top: 50; margin-right: 100; background-color: white;
+          background-image: url("bg1.jpg");
+          background-repeat: no-repeat;
+          background-position: top center} 
+ .font1 { font-size: 27pt; font-family: "HY고딕체"; text-align: center; font-weight: bold; color: white}
+ .font2 { font-size: 12pt; font-family: "HY고딕체"; text-align: center; color: white}
+ .font3 { font-size: 12pt; font-family: "HY고딕체"; text-align: center; color: white; text-decoration: underline}
+ .font4 { font-size: 25pt; font-family: "HY고딕체"; text-align: center; font-weight: bold; color: #330033}
+ .position1 {width:500pt; height: 300pt;
+                          z-index: 1;
+                          position: absolute; top: 300pt; left: 320pt; background-color: #ccffff; border-width: thin; border-color: #cccccc; border-style: solid}
+TABLE { width: 400pt; height: 250pt; border: none}
+.td1 {width:100pt; text-align: center}
+
+</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+          function clickEvent(){ alert("로그인 성공!");}
+ 
+ 
+</SCRIPT>
+</HEAD>
+
+<BODY onload="showElapsedTime()">
+<P CLASS="font1">로그인</P>
+   <P><HR WIDTH="30%" COLOR= "white"></P>
+   <P CLASS="font2">빅데이터 포털 홈페이지<BR><FONT CLASS="font3">회원 인증 페이지입니다.</FONT></P>
+   <BR>
+<P CLASS="font4">로그인</P>
+<HR WIDTH="100%" COLOR= "gray"> 
+<DIV CLASS="position1"><FORM ACTION="자기소개.html" METHOD="POST"><P><TABLE ALIGN="CENTER">
+ <TR>
+       <TD CLASS="td1"><IMG SRC="ID.png" WIDTH="70"></TD>
+       <TD><INPUT TYPE="text" NAME="ID" SIZE="30" VALUE="아이디입력"></TD>
+ </TR>
+       <TD CLASS="td1"><IMG SRC="PWD.png" WIDTH="70"></TD>
+       <TD><INPUT TYPE="text" NAME="PASSWORD" SIZE="30" VALUE="비밀번호입력"></TD>
+ </TR>
+ <TR>
+        <TD COLSPAN="2" ALIGN="CENTER">
+        <INPUT TYPE="submit" VALUE="로그인" onClick="clickEvent()"></TD>
+ </TR>
+</TABLE></FORM></DIV>
+
+</BODY>
+
+</HTML>

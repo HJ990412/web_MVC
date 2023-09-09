@@ -1,0 +1,51 @@
+<HTML>
+
+<HEAD>
+<style type="text/css">
+ a { text-decoration:none }
+ BODY {margin-left: 100; margin-top: 100; margin-right: 100; background-color: #ccffcc; text-align: center}
+.font1 { font-size: 27pt; font-family: "HY고딕체"; text-align: center; font-weight: bold; color: #000066}
+.font2 { font-size: 12pt; font-family: "HY고딕체"; text-align: left; font-weight: bold; color: #3366ff}
+.td1 { width: 600; height: 300; border-style: double}
+.td2 { width: 200 ; text-align: center}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+          function clickEvent(){ alert("회원가입 성공!");}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<P CLASS="font1">회원가입 페이지</P>
+<HR WIDTH="100%" COLOR= "gray"><BR><BR>
+<FORM ACTION="OK.html" METHOD="POST"><TABLE CLASS="td1" ALIGN="CENTER"><FONT CLASS="font2">
+     <TR>
+        <TD CLASS="td2"> <FONT CLASS="font2">이름 </TD>
+        <TD> <INPUT TYPE="text" NAME="name" SIZE="30"></TD>
+     </TR>
+     <TR>
+           <TD CLASS="td2"> <FONT CLASS="font2">아이디 </TD>
+           <TD><INPUT TYPE="text" NAME="ID" SIZE="30"></TD>
+     </TR>
+     <TR>
+        <TD CLASS="td2"> <FONT CLASS="font2">비밀번호 </TD>
+        <TD> <INPUT TYPE="password" NAME="password" SIZE="30"></TD>
+      </TR>
+       <TR>
+        <TD CLASS="td2"> <FONT CLASS="font2"><FONT CLASS="font2">전화번호 </TD>
+        <TD> <INPUT TYPE="TEXT" NAME="tel1" SIZE="3" VALUE="010"> - <INPUT NAME="tel2" SIZE="4"> - 
+          <INPUT NAME="tel3" SIZE="4"> </TD>
+      </TR>
+            <TR>
+        <TD CLASS="td2"> <FONT CLASS="font2">성별 </TD>
+        <TD> <INPUT TYPE="radio" NAME="btn" VALUE="male" CHECKED>남자&nbsp;&nbsp;  
+          <INPUT TYPE="radio" NAME="btn" VALUE="female">여자</TD>
+      </TR>
+     <TR>
+        <TD COLSPAN="2" ALIGN="center">
+        <INPUT TYPE="submit" VALUE="등록하기" onClick="clickEvent()">
+     </TR>
+</TABLE></FORM></FONT>
+
+</BODY>
+
+</HTML>
